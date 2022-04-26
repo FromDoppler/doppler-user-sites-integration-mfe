@@ -2,9 +2,9 @@ import { render, screen } from "@testing-library/react";
 import App from "./App";
 
 test("renders Doppler User Sites Integration Micro-Frontend", () => {
+  const LandingContainer = "LandingContainer";
+
   render(<App />);
-  const linkElement = screen.getByText(
-    /Doppler User Sites Integration Micro-Frontend/i
-  );
-  expect(linkElement).toBeInTheDocument();
+
+  expect(screen.getByLabelText(LandingContainer)).toBeInTheDocument();
 });

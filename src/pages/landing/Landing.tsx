@@ -9,7 +9,7 @@ import {
 const Landing = () => {
   return (
     <>
-      <LandingContainer className="dp-container">
+      <LandingContainer className="dp-container" aria-label="LandingContainer">
         <div className="dp-rowflex">
           <div className="col-sm-12 col-md-8 col-lg-6 m-b-12">
             <LandingBreadcrumb className="breadcrumb">
