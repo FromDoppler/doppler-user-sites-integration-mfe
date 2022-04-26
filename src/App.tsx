@@ -1,6 +1,10 @@
+import Landing from "./pages/landing/Landing";
+
 function App() {
   return (
-    <div className="App">Doppler User Sites Integration Micro-Frontend</div>
+    <div className="App">
+      <Landing />
+    </div>
   );
 }
 
