@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Publish in our CDN') {
             environment {
-                PKG_NAME = "doppler-user-sites-integration-mfe"
+                PKG_NAME = "doppler-user-sites-integration-mfe${PACKAGE_SUFFIX}"
             }
             stages {
                 stage('Publish pre-release packages from pull request') {
